@@ -1,100 +1,251 @@
-/* GENERAL STYLING  */
-body {
-  font-family: 'Open Sans', sans-serrif;
+* {
+  background-color: #F7F7F7;
 }
-
-#wrapper {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0 5%;
-} 
-
-a {
-  text-decoration: none;
-}
-
-img {
+/*HOMEPAGE */
+#homepage {
+  border: 3px solid darkgrey;
+  padding: 10px 10px 0 10px;
+  margin-bottom: 0;
   max-width: 100%;
 }
 
-h3 {
-  margin: 0 0 1em 0;
+/* NAV STYLING  */
+#navbar{
+  display: inline-block;
+  height: 30px;
+  text-align: center;
+  max-width: 100%;
 }
 
+nav {
+  font-family: 'Josefin Sans', sans-serif;
+  position: center;
+  display: inline-block;
+  line-height: .5em;
+  border-top: 2px solid #283842;
+  border-bottom: 2px solid #283842;
+  text-align: center;
+  padding: 5px;
+  width: 50em;
+  max-width: 100%;
+  min-width: 25%;
+  margin: 10px 0px 30px 5px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  display: inline;
+  font-weight: 800;
+  padding: 15px 10px;
+  text-decoration: none;
+  line-height: .5em;
+  height: 10px;
+  color: #0a2d40;
+}
 
 
 /* HEADING STYLING  */
 header {
-  float: left;
-  margin: 0 0 30px 0;
+  margin: 10px 10px 30px 10px;
   padding: 5px 0 0 0;
   width: 100%;
 }
 
 #logo {
-  text-align: center;
+  text-align: left;
   margin: 0;
 }
 
+header a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #0a2d40;
+}
+
+a:hover {
+  color: #c4ffc8;
+  background-color: lightgrey;
+}
+
 h1 {
-  font-family: ;
-  margin: 15px 0;
-  font-size: 1.75em;
+  text-align: left;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 10px;
+  font-size: 1.5em;
   font-weight: normal;
-  line-height: 0.8em;
+  line-height: 1em;
+  text-decoration: none;
+
 }
 
 h2 {
-  font-size: 0.75em;
-  margin: -5px 0 0;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: left;
+  font-size: 1em;
+  margin: 7px 10px 0;
   font-weight: normal;
+  text-decoration: none;
+  color: #0a2d40;
 }
 
 
+/*************
+PRODUCT PAGE
+*************/
 
-/* NAV STYLING  */
-nav {
-  text-align: center;
-  padding: 10px 0;
-  margin: 20px 0 0;
+#body {
+  margin-top: 30px;
+  position: center;
+  border: 2px solid darkgrey;
+  padding: 10px;
+  max-width: 100%;
 }
 
-nav ul {
-  list-style: none;
-  margin: 0 10px;
-  padding: 0;
+#cardGrid {
+  padding: 10px;
+  margin: auto;
+  align-content: auto;
+  width: 95%;
+  background: #e5e5e5;
+  background: repeating-linear-gradient(
+    45deg,
+  lightgrey,
+  lightgrey 2.5px,
+  white 2.5px,
+  white 5px
+    );
 }
 
-nav li {
+#projectCard0,
+#projectCard1,
+#projectCard2,
+#projectCard3,
+#projectCard4,
+#projectCard5,
+#projectCard6,
+#projectCard7,
+#projectCard8,
+#projectCard9,
+#projectCard10,
+#projectCard11 {
+  border: 3px solid black;
+  border-radius: 5px;
   display: inline-block;
+  margin: 10px;
+  vertical-align: top;
+  padding: 5px;
+  height: 10em;
+  width: 15%;
+  background-color: #6070ea;
 }
 
-nav a {
-  font-weight: 800;
-  padding: 15px 10px;
+#productCard0 img,
+#productCard1 img,
+#productCard2 img,
+#productCard3 img,
+#productCard4 img,
+#productCard5 img,
+#productCard6 img,
+#productCard7 img,
+#productCard8 img,
+#productCard9 img,
+#productCard10 img,
+#productCard11 img {
+  max-width: 110px;
 }
 
 
 
-/* BODY STYLING  */
-h1 {
-	color: green;
+/**********************
+CONTACT PAGE
+**********************/
+
+label {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #e5e5e5;
 }
 
-/* FOOTER STYLING  */
+.contact-info {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #e5e5e5;
+}
+
+#contact-card {
+  margin-top: 10%;
+  margin-left: 50%;
+  position: center;
+  display: inline-block;
+  border: 3px solid black;
+  border-radius: 5px;
+  width: 40%;
+  height: 20em;
+  background-color: #e5e5e5;
+}
+
+#contact-card h1 {
+  background-color: #e5e5e5;
+}
+
+#contact-card a,
+#contact-card img {
+  background-color: #e5e5e5;
+  padding: 10px;
+  margin: 8px;
+  text-align: center;
+}
+
+/**********************
+FOOTER
+**********************/
+
 
 footer {
-  font-size: 0.75em;
+  font-family: 'Josefin Sans', sans-serif;
+  align-items: center;
+  border: 3px solid grey;
+  border-radius: 5px;
+  border-width: 50%;
+  font-size: 1em;
   text-align: center;
-  clear: both;
-  padding-top: 50px;
-  color: #ccc;
+  padding-top: 30px;
+  color: #0e2f44;
+  margin: 30px auto 15px auto;
+  width: 100%;
+  text-align: center;
+  position: center;
+  background-color: #e5e5e5;
 }
 
 .social-icon {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
+  position: center;
+  width: 40px;
+  height: 40px;
+  background: #e5e5e5;
+  margin-left: 10px;
+}
+
+footer a {
+  display: inline;
+  padding: 10px;
+  background-color: #e5e5e5;
+  position: center;
+}
+
+footer p {
+  background-color: #e5e5e5;
+  position: center;
 }
 
 
