@@ -1,20 +1,9 @@
-* {
-  background-color: #F7F7F7;
-}
-/*HOMEPAGE */
-#homepage {
-  border: 3px solid darkgrey;
-  padding: 10px 10px 0 10px;
-  margin-bottom: 0;
-  max-width: 100%;
+* {  max-width: 100%;
 }
 
-/* NAV STYLING  */
-#navbar{
-  display: inline-block;
-  height: 30px;
+#navbar {
+  position: center;
   text-align: center;
-  max-width: 100%;
 }
 
 nav {
@@ -22,27 +11,38 @@ nav {
   position: center;
   display: inline-block;
   line-height: .5em;
-  border-top: 2px solid #283842;
-  border-bottom: 2px solid #283842;
+  /*border-top: 2px solid #283842;*/
+  /*border-bottom: 2px solid #283842;*/
   text-align: center;
   padding: 5px;
-  width: 50em;
   max-width: 100%;
   min-width: 25%;
-  margin: 10px 0px 30px 5px;
+
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 5px;
 }
 
 nav ul {
+  margin-top: px;
   list-style: none;
   padding: 0;
-
+  position: center;
 }
 
 nav li {
   display: inline;
+  position: center;
+  text-align: center;
 }
 
 nav a {
+  position: center;
+  text-align: center;
   display: inline;
   font-weight: 800;
   padding: 15px 10px;
@@ -52,6 +52,10 @@ nav a {
   color: #0a2d40;
 }
 
+nav ul li a {
+  position: center;
+  text-align: center;
+}
 
 /* HEADING STYLING  */
 header {
@@ -102,7 +106,7 @@ h2 {
 
 
 /*************
-PRODUCT PAGE
+PORTFLIO/HOME PAGE
 *************/
 
 #body {
@@ -166,7 +170,18 @@ PRODUCT PAGE
   max-width: 110px;
 }
 
+/**********************
+ABOUT PAGE
+**********************/
 
+#about-body {
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 23px;
+  margin: 2em;
+  padding: 2em;
+  border: 2px solid lightgrey;
+  text-align: left;
+}
 
 /**********************
 CONTACT PAGE
@@ -182,10 +197,15 @@ label {
   background-color: #e5e5e5;
 }
 
+#contact-card a,
+#contact-card h1 {
+text-align: center;
+}
+
+
 #contact-card {
   margin-top: 10%;
-  margin-left: 50%;
-  position: center;
+  margin-left: 30%;
   display: inline-block;
   border: 3px solid black;
   border-radius: 5px;
@@ -198,12 +218,13 @@ label {
   background-color: #e5e5e5;
 }
 
-#contact-card a,
+
 #contact-card img {
+  display: block;
   background-color: #e5e5e5;
   padding: 10px;
-  margin: 8px;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /**********************
